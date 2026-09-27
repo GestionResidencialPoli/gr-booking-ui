@@ -38,3 +38,124 @@
   min-height: 160px;
   resize: vertical;
 }
+.gr-zona-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+  gap: 18px;
+  margin-top: 20px;
+}
+.gr-zona-inactiva {
+  opacity: 0.6;
+}
+.gr-zona-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 10px 0 18px;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+.gr-calendario-nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 20px 0;
+}
+.gr-calendario-dias {
+  display: grid;
+  gap: 24px;
+}
+.gr-calendario-dia h3 {
+  margin-bottom: 12px;
+  text-transform: capitalize;
+}
+.gr-franja-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 10px;
+}
+.gr-franja {
+  display: grid;
+  gap: 4px;
+  padding: 10px 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+  text-align: left;
+  font-size: 11px;
+  color: var(--color-text-muted);
+}
+.gr-franja strong {
+  font-size: 13px;
+  color: var(--color-text);
+}
+.gr-franja:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+.gr-franja--disponible {
+  border-color: var(--color-text);
+}
+.gr-franja--parcial {
+  border-style: dashed;
+}
+.gr-franja[aria-pressed="true"] {
+  background: var(--color-subtle);
+  border-color: var(--color-text);
+  border-width: 2px;
+}
+.gr-reserva-confirm {
+  margin-top: 24px;
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+.gr-reserva-listas {
+  display: grid;
+  gap: 32px;
+}
+.gr-reserva-list {
+  display: grid;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 12px 0 0;
+}
+.gr-reserva-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  background: var(--color-surface);
+}
+.gr-reserva-item > div {
+  display: grid;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+}
+.gr-reserva-item strong {
+  font-size: 14px;
+  color: var(--color-text);
+}
+.gr-bloqueos {
+  display: grid;
+  gap: 32px;
+}
+.gr-bloqueo-revision {
+  padding: 20px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+}
+.gr-reserva-filtros {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  display: grid;
+  align-items: end;
+  gap: 16px;
+  margin-bottom: 24px;
+}
