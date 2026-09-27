@@ -1,0 +1,6 @@
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+minimumReleaseAgeExclude:
+  - '@gestionresidencial/auth-client@0.3.0'
+  - '@gestionresidencial/shared-ui@0.2.0'

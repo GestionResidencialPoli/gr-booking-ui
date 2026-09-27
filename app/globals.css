@@ -1,0 +1,40 @@
+@import "@gestionresidencial/shared-ui/styles.css";
+
+.page-heading {
+  margin-bottom: 32px;
+}
+.page-heading h1 {
+  margin: 12px 0;
+}
+.page-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 32px;
+  border-top: 1px solid var(--color-border);
+  padding-top: 20px;
+  font-size: 10px;
+  color: var(--color-text-muted);
+}
+.standalone-state {
+  max-width: 650px;
+  margin: 12vh auto;
+  padding: 24px;
+}
+.gr-field select,
+.gr-field textarea {
+  width: 100%;
+  padding: 11px 13px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  color: var(--color-text);
+  background: var(--color-surface);
+  font: inherit;
+}
+.gr-field select {
+  min-height: 46px;
+}
+.gr-field textarea {
+  min-height: 160px;
+  resize: vertical;
+}
