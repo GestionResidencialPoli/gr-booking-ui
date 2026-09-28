@@ -129,7 +129,7 @@ function ReservasAdminWindow({
         onClose={() => setCancelando(undefined)}
       >
         <form className="gr-form" onSubmit={confirmarCancelacion}>
-          <TextField id="motivo" name="motivo" label="Motivo de la cancelación" required maxLength={300} disabled={pending} />
+          <TextField id="motivo" name="motivo" label="Motivo de la cancelación" required minLength={3} pattern="\s*\S.+\S\s*" title="Escribe al menos 3 caracteres." maxLength={300} disabled={pending} />
           {error && <Feedback error>{error}</Feedback>}
           <div className="gr-form-actions">
             <Button type="submit" disabled={pending}>

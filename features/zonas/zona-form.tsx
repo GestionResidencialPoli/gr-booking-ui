@@ -74,7 +74,7 @@ export function ZonaForm({
   return (
     <>
       <form className="gr-form" onSubmit={handleSubmit}>
-        <TextField id="nombre" name="nombre" label="Nombre" defaultValue={initial?.nombre} required maxLength={100} disabled={pending} />
+        <TextField id="nombre" name="nombre" label="Nombre" defaultValue={initial?.nombre} required maxLength={100} pattern=".*\S.*" title="El nombre no puede estar vacío." disabled={pending} />
         <div className="gr-field">
           <label htmlFor="descripcion">Descripción (opcional)</label>
           <textarea id="descripcion" name="descripcion" defaultValue={initial?.descripcion ?? ""} maxLength={500} disabled={pending} />

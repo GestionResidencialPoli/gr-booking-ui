@@ -96,7 +96,7 @@ export function BloqueosManager({ zonaId }: { zonaId: number }) {
         <form className="gr-form" onSubmit={revisar}>
           <TextField id="inicio" name="inicio" label="Desde" type="datetime-local" required disabled={revisando} />
           <TextField id="fin" name="fin" label="Hasta" type="datetime-local" required disabled={revisando} />
-          <TextField id="motivo" name="motivo" label="Motivo" required maxLength={300} disabled={revisando} />
+          <TextField id="motivo" name="motivo" label="Motivo" required minLength={3} pattern="\s*\S.+\S\s*" title="Escribe al menos 3 caracteres." maxLength={300} disabled={revisando} />
           {error && <Feedback error>{error}</Feedback>}
           <div className="gr-form-actions">
             <Button type="submit" disabled={revisando}>
