@@ -134,10 +134,10 @@ function DisponibilidadWindow({
 
       <div className="gr-calendario-nav">
         <Button variant="secondary" onClick={onAnterior}>
-          ← Semana anterior
+          ← Días anteriores
         </Button>
         <Button variant="secondary" onClick={onSiguiente}>
-          Semana siguiente →
+          Días siguientes →
         </Button>
       </div>
 

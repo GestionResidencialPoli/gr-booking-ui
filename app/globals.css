@@ -159,3 +159,25 @@
   gap: 16px;
   margin-bottom: 24px;
 }
+
+.page-footer { flex-wrap: wrap; font-size: 12px; }
+.page-heading p { max-width: 70ch; }
+.gr-reserva-item { min-width: 0; }
+.gr-reserva-item > div { min-width: 0; overflow-wrap: anywhere; font-size: 14px; }
+.gr-reserva-filtros { grid-template-columns: repeat(auto-fit, minmax(min(100%, 180px), 1fr)); }
+.gr-ingreso-fila { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+@media (max-width: 600px) {
+ .gr-ingreso-fila { grid-template-columns: 1fr; }
+ .gr-reserva-item { flex-direction: column; align-items: stretch; }
+ .gr-reserva-item > .gr-button { width: 100%; }
+ .gr-reserva-item .gr-form-actions { width: 100%; }
+ .gr-wall-notification { flex-wrap: wrap; }
+ .section-title { flex-wrap: wrap; align-items: flex-start; }
+}
+
+.gr-franja { min-height: 64px; font-size: 13px; overflow-wrap: anywhere; }
+.gr-franja strong { font-size: 15px; }
+.gr-calendario-nav { flex-wrap: wrap; }
+.gr-calendario-nav .gr-button { flex: 1 1 180px; }
+.gr-franja-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 140px), 1fr)); }
+.gr-reserva-confirm { scroll-margin-block: 20px; }
